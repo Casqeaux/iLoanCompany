@@ -1,0 +1,336 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+@import "fonts.scss";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  img {
+    width: 0;
+    height: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--accent-color) !important;
+  color: var(--body-color) !important;
+}
+
+.accordion-header {
+  &__title {
+    font-size: 20px !important;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black-color);
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 100px 0;
+}
+
+a {
+  color: var(--black-color);
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--accent-color);
+    transition: 0.8s;
+    text-decoration: none;
+  }
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.p-bottom {
+  margin: 0 0 1rem 0 !important;
+  &__large {
+    margin: 0 0 32px 0 !important;
+  }
+}
+
+.borrow-link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0 !important;
+}
+
+.title {
+  font-size: 50px;
+  line-height: 110%;
+  color: var(--black-color);
+  padding: 0 0 30px 0;
+
+  &__h3 {
+    font-size: 36px;
+    line-height: 110%;
+    color: var(--black-color);
+    padding: 0 0 20px 0;
+  }
+}
+
+.btn-def {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: var(--body-color);
+  background-color: var(--accent-color);
+  border-radius: 0.25rem;
+}
+
+.payDay {
+  padding: 0 0 50px 0 !important;
+}
+
+.accordion {
+  $accordion-button-bg: bs-accordion-bg; 
+}
+
+:root {
+  --body-color: #ffffff;
+  --menu-color: #151e28;
+  --accent-color: #624bff;
+  --black-color: #151517;
+  --grey-color: #F5F5F5;
+}
+
+:root {
+  --menu-fs: 1.125rem
+}
+
+.nav {
+  align-items: center;
+  font-size: var(--menu-fs);
+
+  &__link {
+    text-decoration: none;
+    color: var(--menu-color);
+    font-size: var(--menu-fs);
+    font-weight: 500;
+    padding: .5rem .8rem;
+
+  }
+
+  &__btn {
+    display: block;
+    padding: 0.5rem 0.875rem;
+    font-weight: 500;
+    color: var(--body-color);
+    background-color: var(--accent-color);
+    border-radius: 0.25rem;
+    margin: 0 0 0 10px;
+  }
+}
+
+.main-content {
+  padding: 0;
+
+  &__title {
+    font-size: 36px;
+    line-height: 110%;
+    color: var(--black-color);
+    padding: 0 0 30px 0;
+  }
+
+  &__title-light {
+    text-align: center;
+    font-size: 50px;
+    line-height: 110%;
+    color: #fff;
+    padding: 0 0 30px 0;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--black-color);
+  }
+
+  &__text-light {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  &__text-last {
+    padding: 0 0 40px 0;
+  }
+
+  &__accent {
+    color: var(--accent-color);
+    font-weight: 600;
+  }
+
+  &__left-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__right-wrap {
+    text-align: center;
+  }
+
+  &__right-pic {
+    max-width: 100%;
+  }
+
+  &__btn {
+    font-size: 18px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+      text-decoration: none;
+      background-color: red;
+    }
+  }
+
+  &__bottom {
+    padding: 40px;
+    background-color: var(--grey-color);
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  }
+}
+
+.question {
+  padding: 100px 0 0 0;
+  &__second {
+    padding: 0 0 100px 0;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 110%;
+    color: var(--black-color);
+    padding: 0 0 20px 0;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--black-color);
+  }
+
+  &__wrap {
+    padding: 30px;
+  }
+
+  &__wrap-border {
+    padding: 30px;
+    border: 3px solid var(--accent-color);
+    border-radius: 20px;
+    
+  }
+}
+
+.badCredit,
+.payDay {
+  &__section {
+    padding: 0 !important;
+  }
+  &__wrap {
+    padding: 40px;
+    background-color: var(--grey-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  }
+
+  &__content {
+    max-width: 70%;
+    margin: 0 50px 0 0;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--black-color);
+  }
+
+  &__content-pic {
+    text-align: center;
+  }
+
+  &__content-ico {
+    width: 76%;
+    opacity: 40%;
+  }
+
+  &__content-ico-payday {
+    width: 70%;
+    opacity: 40%;
+  }
+}
+
+.EmergencyCash {
+  &__title {
+    padding: 0;
+  }
+  padding: 0 !important;
+  &__text {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--black-color);
+  }
+
+  &__item {
+   list-style-type: "💰"
+  }
+
+  &__bottom-btn {
+    margin: 0 0 40px 0 !important;
+  }
+
+  &__bgc {
+    max-width: 125%;
+  }
+
+  &__right-wrap {
+    text-align: right;
+  }
+}
+
+.faq {
+  padding: 100px 0 80px 0 !important;
+  &__title {
+    text-transform: uppercase;
+  } 
+}
+
+.footer {
+  &__logo {
+    margin: 0 0 10px 0;
+  }
+}

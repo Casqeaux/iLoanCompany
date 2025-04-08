@@ -1,0 +1,398 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Turkishye";
+  src: url("/fonts/Turkishye.eot");
+  src: url("/fonts/Turkishye.eot?#iefix") format("embedded-opentype"), url("/fonts/Turkishye.woff2") format("woff2"), url("/fonts/Turkishye.woff") format("woff"), url("/fonts/Turkishye.svg#Turkishye") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.ibg img {
+  width: 0;
+  height: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--accent-color) !important;
+  color: var(--body-color) !important;
+}
+
+.accordion-header__title {
+  font-size: 20px !important;
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black-color);
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 100px 0;
+}
+
+a {
+  color: var(--black-color);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+a:hover {
+  color: var(--accent-color);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.p-bottom {
+  margin: 0 0 1rem 0 !important;
+}
+.p-bottom__large {
+  margin: 0 0 32px 0 !important;
+}
+
+.borrow-link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0 !important;
+}
+
+.title {
+  font-size: 50px;
+  line-height: 110%;
+  color: var(--black-color);
+  padding: 0 0 30px 0;
+}
+.title__h3 {
+  font-size: 36px;
+  line-height: 110%;
+  color: var(--black-color);
+  padding: 0 0 20px 0;
+}
+
+.btn-def {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: var(--body-color);
+  background-color: var(--accent-color);
+  border-radius: 0.25rem;
+}
+
+.payDay {
+  padding: 0 0 50px 0 !important;
+}
+
+:root {
+  --body-color: #ffffff;
+  --menu-color: #151e28;
+  --accent-color: #624bff;
+  --black-color: #151517;
+  --grey-color: #F5F5F5;
+}
+
+:root {
+  --menu-fs: 1.125rem ;
+}
+
+.nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: var(--menu-fs);
+}
+.nav__link {
+  text-decoration: none;
+  color: var(--menu-color);
+  font-size: var(--menu-fs);
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+}
+.nav__btn {
+  display: block;
+  padding: 0.5rem 0.875rem;
+  font-weight: 500;
+  color: var(--body-color);
+  background-color: var(--accent-color);
+  border-radius: 0.25rem;
+  margin: 0 0 0 10px;
+}
+
+.main-content {
+  padding: 0;
+}
+.main-content__title {
+  font-size: 36px;
+  line-height: 110%;
+  color: var(--black-color);
+  padding: 0 0 30px 0;
+}
+.main-content__title-light {
+  text-align: center;
+  font-size: 50px;
+  line-height: 110%;
+  color: #fff;
+  padding: 0 0 30px 0;
+}
+.main-content__text {
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--black-color);
+}
+.main-content__text-light {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 150%;
+}
+.main-content__text-last {
+  padding: 0 0 40px 0;
+}
+.main-content__accent {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+.main-content__left-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main-content__right-wrap {
+  text-align: center;
+}
+.main-content__right-pic {
+  max-width: 100%;
+}
+.main-content__btn {
+  font-size: 18px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.main-content__btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  background-color: red;
+}
+.main-content__bottom {
+  padding: 40px;
+  background-color: var(--grey-color);
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.question {
+  padding: 100px 0 0 0;
+}
+.question__second {
+  padding: 0 0 100px 0;
+}
+.question__title {
+  font-size: 36px;
+  line-height: 110%;
+  color: var(--black-color);
+  padding: 0 0 20px 0;
+}
+.question__text {
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--black-color);
+}
+.question__wrap {
+  padding: 30px;
+}
+.question__wrap-border {
+  padding: 30px;
+  border: 3px solid var(--accent-color);
+  border-radius: 20px;
+}
+
+.badCredit__section,
+.payDay__section {
+  padding: 0 !important;
+}
+.badCredit__wrap,
+.payDay__wrap {
+  padding: 40px;
+  background-color: var(--grey-color);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.badCredit__content,
+.payDay__content {
+  max-width: 70%;
+  margin: 0 50px 0 0;
+}
+.badCredit__text,
+.payDay__text {
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--black-color);
+}
+.badCredit__content-pic,
+.payDay__content-pic {
+  text-align: center;
+}
+.badCredit__content-ico,
+.payDay__content-ico {
+  width: 76%;
+  opacity: 40%;
+}
+.badCredit__content-ico-payday,
+.payDay__content-ico-payday {
+  width: 70%;
+  opacity: 40%;
+}
+
+.EmergencyCash {
+  padding: 0 !important;
+}
+.EmergencyCash__title {
+  padding: 0;
+}
+.EmergencyCash__text {
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--black-color);
+}
+.EmergencyCash__item {
+  list-style-type: "💰";
+}
+.EmergencyCash__bottom-btn {
+  margin: 0 0 40px 0 !important;
+}
+.EmergencyCash__bgc {
+  max-width: 125%;
+}
+.EmergencyCash__right-wrap {
+  text-align: right;
+}
+
+.faq {
+  padding: 100px 0 80px 0 !important;
+}
+.faq__title {
+  text-transform: uppercase;
+}
+
+.footer__logo {
+  margin: 0 0 10px 0;
+}
