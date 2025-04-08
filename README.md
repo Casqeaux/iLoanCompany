@@ -1,4 +1,4 @@
-Try it here: https://casqeaux.github.io/iloancompany/
+Try it here: [https://casqeaux.github.io/iloancompany/](https://casqeaux.github.io/iLoanCompany/)
 
 Layout - "Loan Company" using HTML and CSS - Bootstrap 5
 Emergency Cash | Apply for Loans in 24 Hours | Borrow Loan-Company
