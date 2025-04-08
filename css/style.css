@@ -113,6 +113,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px !important;
 }
 
+.nav__btn {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.nav__btn:hover {
+  background-color: red;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 body {
   font-family: "Roboto", sans-serif !important;
   font-size: 16px;
@@ -433,9 +443,6 @@ h3 {
 .hero-section__list {
   padding: 0 0 20px 0;
 }
-.hero-section__item {
-  list-style-type: "💰";
-}
 .hero-section__right-wrap {
   text-align: center;
 }
@@ -469,6 +476,9 @@ h3 {
   border-radius: 20px;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+  height: 200px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 .how-works__wrap:hover {
   background-color: var(--accent-color);
@@ -515,6 +525,8 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 .bm-today__title {
   text-align: center;
