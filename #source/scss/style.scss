@@ -19,6 +19,12 @@
     visibility: hidden;
   }
 }
+
+.accordion-button {
+  font-weight: 600;
+  font-size: 32px !important;
+}
+
 .accordion-button:not(.collapsed) {
   background-color: var(--accent-color) !important;
   color: var(--body-color) !important;
@@ -64,6 +70,11 @@ p {
 
 .p-bottom {
   margin: 0 0 1rem 0 !important;
+
+  &__medium {
+    margin: 0 0 20px 0 !important;
+  }
+
   &__large {
     margin: 0 0 32px 0 !important;
   }
@@ -107,7 +118,7 @@ h3 {
 }
 
 .accordion {
-  $accordion-button-bg: bs-accordion-bg; 
+  $accordion-button-bg: bs-accordion-bg;
 }
 
 :root {
@@ -224,9 +235,11 @@ h3 {
 
 .question {
   padding: 100px 0 0 0;
+
   &__second {
     padding: 0 0 100px 0;
   }
+
   &__title {
     font-size: 36px;
     line-height: 110%;
@@ -248,15 +261,16 @@ h3 {
     padding: 30px;
     border: 3px solid var(--accent-color);
     border-radius: 20px;
-    
+
   }
 }
 
 .badCredit,
 .payDay {
   &__section {
-    padding: 0 !important;
+    padding: 0 0 100px 0 !important;
   }
+
   &__wrap {
     padding: 40px;
     background-color: var(--grey-color);
@@ -298,7 +312,9 @@ h3 {
   &__title {
     padding: 0;
   }
+
   padding: 0 !important;
+
   &__text {
     font-size: 18px;
     line-height: 150%;
@@ -306,7 +322,7 @@ h3 {
   }
 
   &__item {
-   list-style-type: "💰"
+    list-style-type: "💰"
   }
 
   &__bottom-btn {
@@ -323,14 +339,190 @@ h3 {
 }
 
 .faq {
-  padding: 100px 0 80px 0 !important;
+  padding: 0 0 80px 0 !important;
+
   &__title {
     text-transform: uppercase;
-  } 
+  }
+
+  &__main-page {
+    padding: 0 0 80px 0 !important;
+  }
 }
 
 .footer {
   &__logo {
     margin: 0 0 10px 0;
+  }
+}
+
+// Main page
+
+.hero-section {
+  padding: 40px !important;
+
+  &__wrapper {
+    width: 100%;
+    height: 400px;
+    background: -webkit-linear-gradient(90deg, rgb(245, 245, 245) 16%, rgb(242, 242, 242) 100%);
+    background: -moz-linear-gradient(90deg, rgb(245, 245, 245) 16%, rgb(242, 242, 242) 100%);
+    background: linear-gradient(90deg, rgb(245, 245, 245) 16%, rgb(242, 242, 242) 100%);
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 110%;
+    color: var(--black-color);
+    padding: 0 0 30px 0;
+  }
+
+  &__desc {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--black-color);
+  }
+
+  &__list {
+    padding: 0 0 20px 0;
+  }
+
+  &__item {
+    list-style-type: "💰"
+  }
+
+  &__right-wrap {
+    text-align: center;
+  }
+
+  &__bgc {
+    max-width: 75%;
+  }
+}
+
+.example {
+  padding: 60px 0 0 0 !important;
+
+  &__wrap {
+    padding: 30px;
+    border: 3px solid var(--accent-color);
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 110%;
+    color: var(--black-color);
+    padding: 0 0 20px 0;
+  }
+}
+
+.how-works {
+  padding: 60px 0 100px 0 !important;
+
+  &__wrap {
+    text-align: center;
+    background-color: var(--grey-color);
+    padding: 40px;
+    border-radius: 20px;
+    transition: 0.8s;
+
+    &:hover {
+      background-color: var(--accent-color);
+      color: var(--body-color);
+      transition: 0.3s;
+      transform: scale(1.03);
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__title-box {
+    text-transform: uppercase;
+    font-size: 36px;
+
+    &:hover {
+      color: var(--body-color);
+      transition: 0.3s;
+      transform: scale(1.03);
+    }
+  }
+
+  &__desc {
+    text-align: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--black-color);
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 150%
+  }
+}
+
+.bm-today {
+  padding: 0 0 100px 0 !important;
+  &__wrap {
+    background-color: var(--grey-color);
+    border-radius: 20px;
+    display: flex;
+  }
+  &__title {
+    text-align: center;
+    padding: 0 0 32px 0;
+  }
+
+  &__right {
+    padding: 40px;
+  }
+}
+
+.advantages {
+  padding: 0 0 100px 0 !important;
+  &__title {
+    text-align: center;
+    padding: 0 0 32px 0;
+  }
+
+  &__wrap {
+    text-align: center;
+  }
+
+  &__title-box {
+    font-size: 24px;
+  }
+}
+
+.question {
+  &__main-1 {
+    padding: 0 0 100px 0 !important;
+  }
+}
+
+.question-main-2 {
+  &__list-wrap {
+    display: flex;
+  }
+
+  &__item {
+    list-style-type: "🌍"
+  }
+
+  &__list {
+    margin: 0 100px 0 0;
+  }
+
+  &__wrap-padding {
+    padding: 0 0 0 100px !important;
   }
 }
